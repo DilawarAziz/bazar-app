@@ -3,7 +3,8 @@ import img from '../images/Carousel.png'
 function Carousel() {
   return(
       <>
-      <div className='Carousel-main'>
+      <div style={{backgroundColor:"white"}}> 
+               <div className='Carousel-main'>
   <div className='Carousel-heading'>
       <h1>50% Off For Your First Shopping </h1>
       <p>ui porro iste error Reprehenderit idunt fugit!  idunt fugit! Reprehenderit Reprehenderit uloremque,enim .</p>
@@ -15,6 +16,8 @@ function Carousel() {
       <img src={img} alt="img" />
   </div>
   </div>
+  </div>
+
   </>
   )
 }
