@@ -18,16 +18,18 @@ function Rating() {
           <BsFillLightningFill color="red" />
           Flash Deals
         </h1>
+        <div style={{display:"flex"}}>
         <p>
           Veiw All
-          <FaGreaterThan />
         </p>
+          <FaGreaterThan  className="veiw-all-icon"/>
+          </div>
       </div>
       <div className="rating1main"> 
         {data.map((v, i) => (
           <div key={i} className="rating1child">
             <img src={img4} alt="" />
-            <div className='stars'>
+            <div className='stars-rating'>
         <AiFillStar size={"20px"} color='#faaf00'/>
         <AiFillStar size={"20px"} color='#faaf00'/>
         <AiFillStar size={"20px"} color='#faaf00'/>
@@ -47,10 +49,12 @@ function Rating() {
           <BsFillLightningFill color="red" />
           Top Rating
         </h1>
+        <div style={{display:"flex"}}>
         <p>
           Veiw All
-          <FaGreaterThan />
         </p>
+          <FaGreaterThan  className="veiw-all-icon"/>
+          </div>
       </div>
       <div className="rating2main">
       <div className="rating2imgpt">

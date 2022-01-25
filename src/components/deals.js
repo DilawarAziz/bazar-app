@@ -12,19 +12,21 @@ function Deals(props) {
           <BsFillLightningFill color="red" />
           {props?.heading}
         </h1>
+        <div style={{display:"flex"}}>
         <p>
           Veiw All
-          <FaGreaterThan />
         </p>
+          <FaGreaterThan  className="veiw-all-icon"/>
+          </div>
       </div>
       <div className='deal-arrow-pt'>
         </div>
       <div style={{position:"relative"}} className={props.main?props.main:"deal-item-main"}>
-       {!props.main&& <BsFillArrowLeftCircleFill className='arrow1' size={"45px"}  color="#0F3460"/>}
+       {/* {!props.main&& <BsFillArrowLeftCircleFill className='arrow1' size={"45px"}  color="#0F3460"/>} */}
         {props.data.map((v, i) => (
-          <DealItems key={i} type={props.type} title={v.title} />
+          <DealItems img={props.img} key={i} type={props.type} title={v.title} />
           ))}
-       {!props.main&&   <BsFillArrowRightCircleFill className='arrow2' size={"45px"} color="#0F3460"/>}
+       {/* {!props.main&&   <BsFillArrowRightCircleFill className='arrow2' size={"45px"} color="#0F3460"/>} */}
       </div>
     </div>
   );

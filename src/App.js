@@ -2,7 +2,11 @@ import logo from "./logo.svg";
 import "./style/top-rating.css";
 import "./style/footer.css";
 import "./App.css";
+import bike from './images/bike.jpg'
+import glasses from './images/glasses.jpg'
 import './style/media.css'
+import shoes from './images/Carousel.png'
+import car3 from './images/car3.jpg'
 import img from "./images/watch.png";
 import img1 from "./images/Carousel.png";
 import img2 from "./images/flash-3.png";
@@ -19,6 +23,8 @@ import Banner from "./components/banner";
 import Categories from "./components/categories";
 import About from "./components/About";
 import Footer from "./components/footer";
+import mobileimg from './images/mobile.jpg'
+
 function App() {
   let dealsdata = [
     {
@@ -130,18 +136,18 @@ function App() {
       <Navbar />
       <Carousel />
           
-      <Deals heading={"Flash Deals"} type={"deals"} data={dealsdata} />
+      <Deals img={shoes} heading={"Flash Deals"} type={"deals"} data={dealsdata} />
       <Topcategories />
       <Rating  />
 
       <Arrival heading={"New Arrivals"} img={flash}/>
       <Arrival main={"discount-main"} star={"discount-star-pt"} img={img} heading={"Big Discounts"} item={"discount-item"}  />
-      <Cars  data={carsdata} />
-      <Cars data={mobilesdata} />
+      <Cars img={car3} heading={"Cars"} data={carsdata} />
+      <Cars img={mobileimg} heading={"Mobiles"}data={mobilesdata} />
       <Banner/>
-      <Cars heading={"Cars"} data={mobilesdata} />
+      <Cars img={glasses} heading={"Optics"} type={"Optics"} data={mobilesdata} />
       <Categories/>
-      <Deals data={moredata} heading={"More For You"} main={"foryou-main"} item={"foryou-item"} />
+      <Deals img={bike}  data={moredata} heading={"More For You"} main={"foryou-main"} item={"foryou-item"} />
     <About/>
     <Footer/>
     </div>

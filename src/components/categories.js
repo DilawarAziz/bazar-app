@@ -15,10 +15,12 @@ function Categories() {
           <BsFillLightningFill color="red" />
           Categories
         </h1>
+        <div style={{display:"flex"}}>
         <p>
           Veiw All
-          <FaGreaterThan />
         </p>
+          <FaGreaterThan  className="veiw-all-icon"/>
+          </div>
       </div>
       <div className='categories-main'>
           {data.map((v,i)=>(

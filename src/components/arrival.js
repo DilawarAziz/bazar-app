@@ -19,14 +19,16 @@ function Arrival(props) {
           <BsFillLightningFill color="red" />
          {props.heading}
         </h1>
+        <div style={{display:"flex"}}>
         <p>
           Veiw All
-          <FaGreaterThan />
         </p>
+          <FaGreaterThan  className="veiw-all-icon"/>
+          </div>
       </div>
       
       <div style={{position:"relative"}} className={props.main?props.main:"arrival-items-main"}>
-      {props.main&&<BsFillArrowLeftCircleFill className='arrow1' size={"45px"}  color="#0F3460"/>}
+      {/* {props.main&&<BsFillArrowLeftCircleFill className='arrow1' size={"45px"}  color="#0F3460"/>} */}
         {data.map((v, i) => (
             <div key={i} className={props.item ?props.item:'arrival-itmes'}>
                 <img src={props.img} alt=''/>
@@ -35,7 +37,7 @@ function Arrival(props) {
             
             </div>
         ))}
-        {props.main&& <BsFillArrowRightCircleFill className='arrow2' size={"45px"} color="#0F3460"/>}
+        {/* {props.main&& <BsFillArrowRightCircleFill className='arrow2' size={"45px"} color="#0F3460"/>} */}
       </div>
       </div>
   )

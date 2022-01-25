@@ -52,4 +52,30 @@ color: gray;
 }
 .footerimg{
     width: 80%;
+    margin: 6px;
+}
+
+
+.footer2{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    justify-content: space-around;
+    width: 100%;
+    background-color: white;
+    display: none;
+    padding-top: 8px;
+}
+.footer2 p{
+ margin: 0px; 
+ font-size: 14px;  
+ color: gray;
+}
+.footer2-child{
+    text-align: center;
+    padding: 12px;
+}
+.footer2-child-icon{
+    height: 28px;
+    width: 30px;
 }

@@ -21,9 +21,12 @@ function Topcategories() {
           <BsFillLightningFill color="red" />
           Top Categories
         </h1>
+        <div style={{display:"flex"}}>
         <p>
-          Veiw All <FaGreaterThan />
+          Veiw All
         </p>
+          <FaGreaterThan  className="veiw-all-icon"/>
+          </div>
       </div>
       <div className="top-cat-main">
         {data.map((v, i) => (

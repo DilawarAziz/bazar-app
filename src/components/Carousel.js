@@ -3,7 +3,7 @@ import img from '../images/Carousel.png'
 function Carousel() {
   return(
       <>
-      <div style={{backgroundColor:"white"}}> 
+      <div style={{backgroundColor:"white" }}> 
                <div className='Carousel-main'>
   <div className='Carousel-heading'>
       <h1>50% Off For Your First Shopping </h1>
@@ -16,6 +16,7 @@ function Carousel() {
       <img src={img} alt="img" />
   </div>
   </div>
+  
   </div>
 
   </>

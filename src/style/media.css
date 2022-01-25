@@ -3,7 +3,17 @@
     
 }
 @media only screen and (min-width: 0px) and  (max-width: 960px) {
+   
+    .rating2imgpt img{
+      height: auto;  
+    }
     
+    .footer2{
+        display: flex;
+    }
+    .before-nav{
+       height: 40px; 
+    }
     .nav-icons-main {
         display: none;   
     }
@@ -13,6 +23,9 @@
     .searchparent {
         width: 80%;   
         
+    }
+    .navbar-main{
+        justify-content: center;
     }
     .navbar-main2 {
         display: none;   
@@ -36,12 +49,18 @@
     .cars-main{
         grid-template-columns: 1fr;
     }
-    .cars-items-main{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
+    
 }
 
 @media only screen and (min-width: 700px) and  (max-width: 960px) {
+    .rating1main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+    .cars-items-main{
+        grid-template-columns: 1fr 1fr;
+        }
     
     .Carousel-main {
      height: 525px;   
@@ -84,6 +103,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-items: center;
+        margin-bottom: 73px;
     }
     .footer-child p{
         margin: 0px;
@@ -100,6 +120,23 @@
 }
 
 @media only screen and (min-width: 600px) and  (max-width: 700px) {
+    .deal-item-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    .cars-items-main{
+        grid-template-columns: 1fr 1fr;
+        }
+    .banner-main{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .banner-img-1{
+        width: 100%;
+    }
+    .banner-img-2{
+        width: 100%;
+    }
     .Carousel-main {
         height: 525px;   
        }
@@ -148,6 +185,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-items: center;
+        
     }
     .footer-child p{
         margin: 0px;
@@ -163,15 +201,37 @@
     }
 }
 @media only screen and (min-width: 0px) and  (max-width: 600px) {
+    .nav-all-cat ul{
+        left: -120px;
+        top: 30px;
+    }
+    .search-cat{
+        display: none;
+    }
+    .navbar-main{
+        width: 95%;
+    }
+    .search-cat-pt{
+        padding-left: 12px;
+    }
+    .banner-img-1{
+        width: 100%;
+    }
+    .banner-main{
+        width: 90%;
+    }
+    .banner-img-2{
+        width: 100%;
+    }
     .navbar-main{
         width: 87%;
     }
     .deal-item-main{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
     }
     .Carousel-main {
-        height: 650px; 
+        height: 800px; 
         flex-direction: column;  
        }
        .Carousel-img-pt{
@@ -179,6 +239,8 @@
        }
        .Carousel-img-pt img{
            height: 300px;
+           width: 70%;
+    margin: 0 auto;
        }
        .Carousel-heading{
            padding: 20px;
@@ -238,10 +300,10 @@
        }
        
        .search-icons {
-        width: 50%;
+        width: 90%;
        }
        .foryou-main {
-        grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+        grid-template-columns:1fr
        }
        .footer-main{
         display: grid;
@@ -258,6 +320,10 @@
     }
     .footer-child h1{
         margin: 0px;
+        
+    }
+    .searchparent {
+        width: 100%;   
         
     }
 }
